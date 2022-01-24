@@ -27,12 +27,13 @@ let mySprite = sprites.create(img`
 pause(2000)
 let theName = game.askForString("What is your name?", 10)
 mySprite.sayText("Hello " + theName)
-let guessNumber = game.askForString("Guess a number two numbers 0-3", 10)
 pause(5000)
+let guessNumber = game.askForString("Guess a number two numbers 0-3", 10)
+pause(500)
 addOrRemove(1, Math.percentChance(50))
 game.splash(addOrRemove(1, Math.percentChance(50)))
 game.splash(addOrRemove(2, Math.percentChance(50)))
-pause(5000)
+pause(2000)
 // picks a random number between 1 and 5
 let value = randint(1, 5)
 // picks a value at random between 1 and 5

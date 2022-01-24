@@ -27,6 +27,7 @@ let mySprite = sprites.create(img`
 pause(2000)
 let theName = game.askForString("What is your name?", 10)
 mySprite.sayText("Hello " + theName)
+let guessNumber = game.askForString("Guess a number two numbers 0-3", 10)
 pause(5000)
 addOrRemove(1, Math.percentChance(50))
 game.splash(addOrRemove(1, Math.percentChance(50)))
